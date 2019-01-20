@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect('localhost:27017/test');
+mongoose.connect('mongodb://nikhil:Xn1BTV9ROMSCweFZ@cluster0-shard-00-00-4cvca.mongodb.net:27017,cluster0-shard-00-01-4cvca.mongodb.net:27017,cluster0-shard-00-02-4cvca.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true');
 var Schema = mongoose.Schema;
 
 var userDataSchema = new Schema({
